@@ -8,7 +8,7 @@ title: openxface
 -------------
 **1. [入门](induction.html)**
 
-- [什么是xFace](WhatIsxface1.html)
+- [什么是xFace](WhatIsxFace1.html)
 - [xFace与其他平台的异同](xfaceAndOtherPlatformDiff.html)
 	- [PC](PC.html) 
 - [创建第一个xFace应用](CreatFirstxFace.html)
