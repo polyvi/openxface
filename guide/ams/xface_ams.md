@@ -16,4 +16,6 @@ With a back-end app market service, the Portal can ask for the market to get inf
 
 ![ams with market](img/ams_with_market.png "market")
 
-The whole solution of AMS with one sophisticated market provides an ability to build your own app ecosystem.
+The whole solution of AMS with one sophisticated market provides an ability to build your own app ecosystem. Here's a screenshot of our Portal app,
+
+![portal demo](img/portal_demo.png "portal demo")
