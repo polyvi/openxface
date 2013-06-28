@@ -1,3 +1,8 @@
+---
+layout: default
+title: openxface
+---
+
 ## xFace Configuration
 ###公共配置
 ####AutoHideSplashScreen
