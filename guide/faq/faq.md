@@ -1,3 +1,8 @@
+---
+layout: default
+title: openxface
+---
+
 ## FAQ
 * [iOS调用扩展接口无法立刻获得数据?](#async_interface_ios)
 * [安装应用失败?](#app_installation_fail)
@@ -9,6 +14,7 @@
 * [geolocation在Android平台不能成功活得位置信息?](#geolocation_not_work_android)
 * [修改了xface.js中的代码，为什么没有生效?](#modified_xface_js_not_apply)
 * [引擎安装了多个应用，多个版本xface.js，如何共存?](#several_different_version_xface_js)
+
 __________________
 <a id="async_interface_ios"></a>
 Q：在iOS平台上调用扩展接口，如xFace.AMS.listInstalledApplications(success:Function, fail:Function):void，为何无法立即使用获取到的数据？
