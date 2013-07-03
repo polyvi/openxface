@@ -3,7 +3,10 @@ layout: default
 title: openxface
 ---
 
-## Player 使用手册
+# Player 使用手册
 
-  * [Android](android.html)
-  * [iOS](iOS.html)
+* Auto-generated toc:
+{:toc}
+
+{% include androidPlayer.md %}
+{% include iOSPlayer.md %}

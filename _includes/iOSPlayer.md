@@ -1,8 +1,3 @@
----
-layout: default
-title: openxface
----
-
 ## iOS 平台
 
 ### 非越狱设备

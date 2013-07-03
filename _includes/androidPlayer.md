@@ -1,8 +1,3 @@
----
-layout: default
-title: openxface
----
-
 ## Android 平台
 
 ### 安装xFacePlayer.apk
