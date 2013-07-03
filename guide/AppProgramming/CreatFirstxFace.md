@@ -19,25 +19,23 @@ title: openxface
 
 下面以hello world为例：
 
-<pre><code>
-< html>
-< head>
-< meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-< title>hello world</title>
-< script src="xface.js"></script>
-< script>
-document.addEventListener("deviceready",onDeviceReady,false);
-function onDeviceReady(){
-alert("you can use xFace API now!");
-}
-< /script>
-< /head>
+    <html>
+    <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>hello world</title>
+    <script src="xface.js"></script>
+    <script>
+        document.addEventListener("deviceready",onDeviceReady,false);
+        function onDeviceReady(){
+            alert("you can use xFace API now!");
+        }
+    </script>
+    </head>
 
-< body>
- hello world!
-< /body>
-< /html>
-</code></pre>
+    <body>
+        hello world!
+    </body>
+    </html>
 
 
 **注意：**

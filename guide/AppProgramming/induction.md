@@ -4,7 +4,7 @@ title: openxface
 ---
 
 ## [xFace3.x 应用开发指南](index.html) > xFace 3.x 入门
-<BR>
+
 欢迎使用本手册。 
 
 - [什么是xFace](WhatIsxface1.html)
