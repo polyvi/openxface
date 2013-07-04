@@ -18,6 +18,3 @@
 
 ![](ImgAndroid/helloworldprint1.png)
 
-
-
-实例文件：[点击此处]()
