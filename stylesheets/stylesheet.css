@@ -483,3 +483,47 @@ footer a:hover {
 
 /* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
 @media only screen and (max-width: 479px) {}
+
+/* Back to top */
+.current-section {
+  position: fixed;
+  border-top: solid 1px #fff;
+  top: 0;
+  background: #2e7bcf url(../images/header-bg.jpg) 0 0 repeat-x;
+  color: #fff;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity ease-in-out 0.3s;
+  border-bottom: solid 1px #275da1;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif;
+  left: 50%;
+  width:760px;
+  margin-left: -510px;
+}
+
+#current-section img {
+  max-width: 100%;
+}
+
+.current-section p {
+  padding-left: 30px;
+  padding-top: 5px;
+  padding-bottom:5px;
+  font-size: 22px;
+  display:inline;
+}
+
+.current-section a {
+  float: right;
+  text-indent: -10000px;
+  background: transparent url(../images/arrow-up.png) no-repeat 0 0;
+  width: 48px;
+  height: 48px;
+  opacity: 0.8;
+}
+
+.current-section a:hover {
+  opacity: 1;
+  -moz-opacity: 1;
+  filter:alpha(opacity=1);
+}
