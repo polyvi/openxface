@@ -31,6 +31,15 @@
 
 * 重新运行xFacePlayer
 
+#### 视频教程
+
+<object width="720" height="420">
+    <param name="movie" value="{{ site.baseurl }}/videos/player/iOS_player_itunes.mp4" />
+    <param name="allowFullScreen" value="true" />
+    <param name="allowScriptAccess" value="sameDomain" />
+    <embed type="application/x-shockwave-mp4" width="720" height="420" allowfullscreen="true" allowscriptaccess="always" src="{{ site.baseurl }}/videos/player/iOS_player_itunes.mp4"></embed>
+</object>
+
 ### 越狱设备
 
 对于越狱的iOS设备，xFacePlayer提供了一种更为简便的操作方式来更新启动时加载的应用，操作步骤如下：
