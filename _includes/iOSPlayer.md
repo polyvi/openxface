@@ -33,11 +33,11 @@
 
 #### 视频教程
 
-<object width="720" height="420">
+<object width="720" height="414">
     <param name="movie" value="{{ site.baseurl }}/videos/player/iOS_player_itunes.mp4" />
     <param name="allowFullScreen" value="true" />
     <param name="allowScriptAccess" value="sameDomain" />
-    <embed type="application/x-shockwave-mp4" width="720" height="420" allowfullscreen="true" allowscriptaccess="always" src="{{ site.baseurl }}/videos/player/iOS_player_itunes.mp4"></embed>
+    <embed type="application/x-shockwave-mp4" width="720" height="414" allowfullscreen="true" allowscriptaccess="always" src="{{ site.baseurl }}/videos/player/iOS_player_itunes.mp4"></embed>
 </object>
 
 ### 越狱设备
@@ -58,6 +58,15 @@
 ![](ImgIOS/xFacePlayerItoolsCopyFiles2.png)
 
 * 重新运行xFacePlayer
+
+#### 视频教程
+
+<object width="720" height="416">
+    <param name="movie" value="{{ site.baseurl }}/videos/player/iOS_player_itools.mp4" />
+    <param name="allowFullScreen" value="true" />
+    <param name="allowScriptAccess" value="sameDomain" />
+    <embed type="application/x-shockwave-mp4" width="720" height="416" allowfullscreen="true" allowscriptaccess="always" src="{{ site.baseurl }}/videos/player/iOS_player_itools.mp4"></embed>
+</object>
 
 ### 补充说明
 
