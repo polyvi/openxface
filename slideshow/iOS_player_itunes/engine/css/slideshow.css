@@ -1,0 +1,185 @@
+/**
+Stylesheet: Slideshow.css
+	CSS for Slideshow.
+
+License:
+	MIT-style license.
+
+Copyright:
+	Copyright (c) 2008 [Aeron Glemann](http://www.electricprism.com/aeron/).
+	
+HTML:
+	<div class="slideshow">
+		<div class="slideshow-images" />
+		<div class="slideshow-captions" />
+		<div class="slideshow-controller" />
+		<div class="slideshow-loader" />
+		<div class="slideshow-thumbnails" />
+	</div>
+	
+Notes:
+	These next four rules are set by the Slideshow script.
+	You can override any of them with the !important keyword but the slideshow probably will not work as intended.
+*/
+
+.slideshow {
+	display: block;
+	position: relative;
+	z-index: 0;
+}
+.slideshow-images {
+	display: block;
+	overflow: hidden;
+	position: relative;
+}		
+.slideshow-images img {
+	display: block;
+	position: absolute;
+	z-index: 1;
+}		
+.slideshow-thumbnails {
+	overflow: hidden;
+}
+
+/**
+Notes:
+	These are examples of user-defined styles.
+	Customize these classes to your usage of Slideshow.
+*/
+
+.slideshow {
+	width: 650px;
+	height: 535px;
+	margin: 0 auto;
+	background: url("../images/back.png") no-repeat scroll 0 0 transparent; 
+}
+.slideshow a img {
+	border: 0;
+}.slideshow-frame{
+	display:block;
+	position: absolute;
+	left:5px;
+	top:5px;
+	width:624px;
+	height:464px;
+	border:solid 8px black;
+	filter:progid:DXImageTransform.Microsoft.Alpha(opacity=30);
+	opacity:0.3;
+	z-index:100;
+}
+/**
+HTML:
+	<div class="slideshow-images">
+		<img />
+		<img />
+	</div>
+	
+Notes:
+	The images div is where the slides are shown.
+	Customize the visible / prev / next classes to effect the slideshow transitions: fading, wiping, etc.
+*/
+
+.slideshow-images {
+	width: 0px;
+	height: 0px;
+	left: 5px;
+	top: 5px;
+}		
+.slideshow-images-visible { 
+	opacity: 1;
+}	
+.slideshow-images-prev { 
+	opacity: 0; 
+}
+.slideshow-images-next { 
+	opacity: 0; 
+}
+.slideshow-images img {
+	float: left;
+	left: 0;
+	top: 0;
+	position: static;
+}
+/**
+HTML:
+	<div class="slideshow-controller">
+		<ul>
+			<li class="first"><a /></li>
+			<li class="prev"><a /></li>
+			<li class="pause play"><a /></li>
+			<li class="next"><a /></li>
+			<li class="last"><a /></li>
+		</ul>
+	</div>
+	
+Notes:
+	Customize the hidden / visible classes to affect the controller animation.
+*/
+
+.slideshow-controller {
+	background: url(../images/controller.png) no-repeat;
+	height: 56px;
+	left: 50%;
+	margin: 0 0 -11px -75px;
+	overflow: hidden;
+	position: absolute;
+	bottom: 10%;
+	width: 150px;
+	z-index: 10000;
+}
+.slideshow-controller * {
+	margin: 0;
+	padding: 0;
+}
+.slideshow-controller-hidden { 
+	opacity: 0;
+}
+.slideshow-controller-visible {
+	opacity: 1;
+}
+.slideshow-controller a {
+	cursor: pointer;
+	display: block;
+	height: 17px;
+	overflow: hidden;
+	position: absolute;
+	top: 18px;
+	background-position: 0 -17px;
+}
+.slideshow-controller a.active {
+	background-position: 0 0;
+}
+.slideshow-controller li {
+	list-style: none;
+}
+.slideshow-controller li.first a {
+	background-image: url(../images/controller-first.gif);
+	left: 20px;
+	width: 17px;
+}
+.slideshow-controller li.prev a {
+	background-image: url(../images/controller-prev.gif);
+	left: 43px;
+	width: 17px;
+}
+.slideshow-controller li.pause a {
+	background-image: url(../images/controller-pause.gif);
+	left:  66px;
+	width: 17px;
+}
+.slideshow-controller li.play a {
+	background-position: 100% 0;
+}
+.slideshow-controller li.play a.active {
+	background-position: 100% 100%;
+}
+.slideshow-controller li.next a {
+	background-image: url(../images/controller-next.gif);
+	left: 89px;
+	width: 17px;
+}
+.slideshow-controller li.last a {
+	background-image: url(../images/controller-last.gif);
+	left: 112px;
+	width: 17px;
+}

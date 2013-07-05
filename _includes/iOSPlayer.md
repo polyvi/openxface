@@ -2,6 +2,8 @@
 
 ### 非越狱设备
 
+#### 文字教程
+
 * 安装iTunes 
 * 将iOS设备与iTunes进行连接 
 * 安装xFacePlayer.ipa到设备上
@@ -30,6 +32,24 @@
 ![](ImgIOS/xFacePlayeriOSSync.png)
 
 * 重新运行xFacePlayer
+
+#### 幻灯片教程
+
+<!-- Start VisualSlideShow.com BODY section -->
+<div id="show" class="slideshow">
+<div class="slideshow-images">
+<a href="#"><img id="slide-0" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/data/images/slide1.jpg" alt="Slide1" title="Slide1" /></a>
+<a href="#"><img id="slide-1" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/data/images/slide2.jpg" alt="Slide2" title="Slide2" /></a>
+<a href="#"><img id="slide-2" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/data/images/slide3.jpg" alt="Slide3" title="Slide3" /></a>
+<a href="#"><img id="slide-3" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/data/images/slide4.jpg" alt="Slide4" title="Slide4" /></a>
+<a href="#"><img id="slide-4" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/data/images/slide5.jpg" alt="Slide5" title="Slide5" /></a>
+</div>
+<a id="vlb" href="http://visualslideshow.com">Slideshows Software by VisualSlideshow.com v2.0m</a>
+<div class="slideshow-frame"></div>
+</div>
+<!-- End VisualSlideShow.com BODY section -->
+
+---
 
 #### 视频教程
 
