@@ -9,6 +9,7 @@ xFace offers a running mode for multiple apps. Typically there is a supervisor a
 Basically AMS offers a set of interfaces to manage apps as following,
 
 ![ams](img/ams.png "ams outline")
+
 ##AMS with App Market
 
 With a back-end app market service, the Portal can ask for the market to get information, download, install or update apps with desire. The next figure outlines the entire circle, 
