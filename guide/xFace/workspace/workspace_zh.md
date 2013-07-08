@@ -3,8 +3,6 @@ layout: default_zh
 title: xFaceLib
 ---
 
-Use numbered headers: true
-
 # xFace App Workspace 介绍
 
 * Auto-generated toc:
@@ -21,6 +19,7 @@ Use numbered headers: true
 ## workspace操作接口
 
 xFace文件系统支持两类文件路径
+
 * file://sdcard/...，表示访问sdcard上任一文件,sdcard 仅仅表示外部存储的协议，引擎通过解析这路径会将该目录映射到手机的外部存储上
 * /data/.../ , 路径以/开始，表示限制于app workspace， 存储在app workspace下的某个目录 比如：/a ,表示app workspace的a目录下，注意 workspace的位置对应用是透明的，有可能被配置到sdcard，也有可能配置到内存卡上，由打包系统决定
 

@@ -3,8 +3,6 @@ layout: default_zh
 title: Communicating with xFace
 ---
 
-Use numbered headers: true
-
 # 第三方如何与xFace通信
 
 * Auto-generated toc:
@@ -50,6 +48,7 @@ Use numbered headers: true
         intent.setComponent(cn);
         startActivity(intent);
     }
+{:lang="java"}
 
 ###ios
 
