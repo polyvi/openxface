@@ -12,8 +12,8 @@ _____
 
 _____
 
-### 调整ThirdParty工程
-#### 添加Framesworks
+### 一. 调整ThirdParty工程
+#### 1. 添加Framesworks
 待添加到ThirdParty工程中的Frameworks包括两类，其一为xFaceLib.framework,其二为xFaceLib.framework依赖的系统frameworks.
 
 添加Framesworks后的ThirdParty工程如下图所示：
@@ -22,7 +22,7 @@ _____
 
 ![](iOSImages/third_party_frameworks.png)
 
-#### 添加xFaceResources
+#### 2. 添加xFaceResources
 
 xFaceResources包括xFace启动时使用的launchImages，配置文件（platformConfig.plist），xface.js以及其他资源文件，参见下图：
 
@@ -30,7 +30,7 @@ xFaceResources包括xFace启动时使用的launchImages，配置文件（platfor
 
 ![](iOSImages/add_xFaceResources.png)
 
-#### 添加www
+#### 3. 添加www
 www目录用于放置xFace web app的源码
 
 【图 add www folder】
@@ -45,38 +45,38 @@ www目录用于放置xFace web app的源码
 
 ![](iOSImages/copy_bundle_resources.png)
 
-#### 修改工程配置
+#### 4. 修改工程配置
 添加“__-all_load -ObjC__”到工程配置 TARGETS->ThirdParty->Build Settings->Other Linker Flags，参见下图：
 
 【图 Other Linker Flags】
 
 ![](iOSImages/other_linker_flags.png)
 
-### 调整ThirdParty源码
+### 二. 调整ThirdParty源码
 
 修改AppDelegate的源码，以启动xFace
 
-#### AppDelegate.h
+#### 1. AppDelegate.h
 
 【图 AppDelegate.h】
 
 ![](iOSImages/appDelegate_header.png)
 
-#### AppDelegate.m
+#### 2. AppDelegate.m
 
 【图 AppDelegate.m】
 
 ![](iOSImages/appDelegate_source.png)
 
 ### 其他说明
-#### XRuntime
+#### 1. XRuntime
 要求XRuntime作为AppDelegate的property,以确保下述代码（引自xFaceLib.framework）可以正确执行
 
     id<UIApplicationDelegate> appDelegate = [UIApplication sharedApplication].delegate;
  
     XRuntime *runtime = [appDelegate performSelector:@selector(runtime)];
  
-#### LaunchImage
+#### 2. LaunchImage
 
 通过ThirdParty-Info.plist可以指定ThirdParty与xFace是否使用相同的launchImage,具体说明如下：
 
@@ -95,7 +95,7 @@ www目录用于放置xFace web app的源码
 
 简言之，如果ThirdParty-Info.plist中配置了UILaunchImageFile，则xFace使用与ThirdParty相同的launchImage；如果没有配置，xFace则使用以xface_logo命名的launchImage
 
-#### Push Notification
+#### 3. Push Notification
 
 如果需要使用xFace的Push Notification扩展，请在ThirdParty的AppDelegate中添加如下代码：
 
@@ -132,7 +132,7 @@ www目录用于放置xFace web app的源码
         [self.runtime performSelector:@selector(pushNotification:) withObject:userInfo afterDelay:3];
     }
 
-#### Custom URL Scheme
+#### 4. Custom URL Scheme
 
 如果ThirdParty启动xFace时，欲向xFace传递启动参数，请在XRuntime初始化后添加如下代码：
 
