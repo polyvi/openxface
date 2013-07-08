@@ -1,9 +1,7 @@
 ---
 layout: default
-title: openxface
+title: FAQ
 ---
-
-## FAQ
 
 * [iOS调用扩展接口无法立刻获得数据?](#qiosxfaceamslistinstalledapplicationssuccessfunction_failfunctionvoid)
 * [安装应用失败?](#qportal)

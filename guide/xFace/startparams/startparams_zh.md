@@ -1,9 +1,7 @@
 ---
 layout: default_zh
-title: Communicating with xFace
+title: 第三方如何与xFace通信
 ---
-
-# 第三方如何与xFace通信
 
 * Auto-generated toc:
 {:toc}

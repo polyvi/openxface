@@ -1,9 +1,7 @@
 ---
 layout: default_zh
-title: xFaceLib
+title: 第三方使用xFace Library指南
 ---
-
-# 第三方使用xFace Library指南
 
 * Auto-generated toc:
 {:toc}

@@ -1,8 +1,7 @@
 ---
 layout: default
-title: openxface
+title: xFace Application Management System
 ---
-#xFace Application Management System
 
 ##What is AMS
 xFace offers a running mode for multiple apps. Typically there is a supervisor app which's responsible for all other managed applications. Let's simply call this supervisor app as "Portal". Only Portal can be authorized AMS permission. 

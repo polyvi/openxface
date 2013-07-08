@@ -1,9 +1,7 @@
 ---
 layout: default
-title: openxface
+title: xFace3.x 应用开发指南
 ---
-
-# <center>xFace3.x 应用开发指南</center>
 
 -------------
 **1. [入门](induction.html)**

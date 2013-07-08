@@ -1,11 +1,7 @@
 ---
 layout: player
-title: openxface
+title: Player 使用手册
 ---
-
-Use numbered headers: true
-
-# Player 使用手册
 
 * Auto-generated toc:
 {:toc}

@@ -1,9 +1,7 @@
 ---
 layout: default
-title: openxface
+title: xFace Application
 ---
-
-# xFace Application
 
 * Auto-generated toc:
 {:toc}

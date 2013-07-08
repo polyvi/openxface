@@ -1,9 +1,7 @@
 ---
 layout: default_zh
-title: xFaceLib
+title: xFace App Workspace 介绍
 ---
-
-# xFace App Workspace 介绍
 
 * Auto-generated toc:
 {:toc}

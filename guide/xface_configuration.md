@@ -1,9 +1,8 @@
 ---
 layout: default
-title: openxface
+title: xFace Configuration
 ---
 
-## xFace Configuration
 ###公共配置
 ####AutoHideSplashScreen
 是否自动隐藏SplashScreen，设置为false时，应用必须负责关闭SplashScreen
