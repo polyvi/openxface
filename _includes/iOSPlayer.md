@@ -2,40 +2,11 @@
 
 ### 非越狱设备
 
-#### 文字教程
-
-* 安装iTunes 
-* 将iOS设备与iTunes进行连接 
-* 安装xFacePlayer.ipa到设备上
-* 将应用压缩为zip包，要求命名为xface_player.zip，请参见【图一】【图二】
-
-【图一】压缩应用
-
-![](ImgIOS/xFacePlayeriOSCompress1.png)
-
-【图二】重命名应用压缩包为xface_player.zip
-
-![](ImgIOS/xFacePlayeriOSCompress2.png)
-
-* 通过iTunes拷贝xface_player.zip到xFacePlayer的documents目录下并进行同步，请参见【图三】【图四】【图五】
-
-【图三】定位File Sharing下的xFacePlayer
-
-![](ImgIOS/xFacePlayeriOSFileSharing.png)
-
-【图四】添加xface_player.zip到/Documents下
-
-![](ImgIOS/xFacePlayeriOSAddZip.png)
-
-【图五】执行同步操作
-
-![](ImgIOS/xFacePlayeriOSSync.png)
-
-* 重新运行xFacePlayer
+此部分我们主要讲解如何通过iTunes将web应用添加到xFacePlayer,具体操作请参考下面的教程
 
 #### 幻灯片教程
 
-<!-- Start VisualSlideShow.com BODY section -->
+<!-- Start slide section -->
 <div id="show" class="slideshow">
 <div class="slideshow-images">
 <a href="#"><img id="slide-0" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/data/images/slide1.jpg" alt="Slide1" title="Slide1" /></a>
@@ -44,10 +15,9 @@
 <a href="#"><img id="slide-3" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/data/images/slide4.jpg" alt="Slide4" title="Slide4" /></a>
 <a href="#"><img id="slide-4" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/data/images/slide5.jpg" alt="Slide5" title="Slide5" /></a>
 </div>
-<a id="vlb" href="http://visualslideshow.com">Slideshows Software by VisualSlideshow.com v2.0m</a>
 <div class="slideshow-frame"></div>
 </div>
-<!-- End VisualSlideShow.com BODY section -->
+<!-- End slide section -->
 
 ---
 
@@ -62,7 +32,7 @@
 
 ### 越狱设备
 
-对于越狱的iOS设备，xFacePlayer提供了一种更为简便的操作方式来更新启动时加载的应用，操作步骤如下：
+对于越狱的iOS设备，xFacePlayer提供了一种更为简便的操作方式来添加web应用，操作步骤如下：
 
 * 安装iTools 
 * 将iOS设备与iTools进行连接
