@@ -1,10 +1,5 @@
----
-layout: default
-title: openxface
----
+#### 响应布局
 
-## [开发技巧](index.html) > 响应布局
-<br>
 **响应布局(responsive layout)：**
 
 - 是一种有别于传统的固定布局(fixed layout)和流体布局(fluid layout)的网页布局。

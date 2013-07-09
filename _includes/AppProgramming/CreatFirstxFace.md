@@ -1,10 +1,5 @@
----
-layout: default
-title: openxface
----
+### 创建第一个xFace应用
 
-## [入门](induction.html) > 创建第一个xFace应用
-<br>
 **在开始xFace开发之前，您需要对下面的知识有基本的了解：**
     
 - html
@@ -41,5 +36,5 @@ title: openxface
 **注意：**
 
 - 这只是一个简单的测试页面，没有使用js、css等外联资源文件。
-- 在index.html页面中必须在头部引入xface.js文件。
+- index.html页面必须在头部引入xface.js文件。
 
