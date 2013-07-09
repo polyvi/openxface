@@ -1,6 +1,107 @@
----
-layout: master_zh
----
-<h1><center>{{page.title}}</center></h1>
-<hr />
-{{ content }}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Architects+Daughter' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/stylesheet.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/pygment_trac.css" media="screen" />
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/stylesheets/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+
+    <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
+    <script src="{{ site.baseurl }}/js/site.js" ></script>
+
+    {% if page.tags == "Player" %}
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/slideshow/iOS_player_itunes/engine/css/slideshow.css" media="screen" />
+    <script type="text/javascript" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/engine/js/mootools.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/engine/js/visualslideshow.js"></script>
+    {% endif %}
+
+    <title>Openxface中文站</title>
+  </head>
+
+  <body>
+    <header>
+      <div class="inner">
+        <h1><a href="{{ site.baseurl }}/index_zh.html">Openxface</a></h1>
+        <h2></h2>
+        <a href="{{ site.baseurl }}/index.html" class="button"><small>Visit</small>Home</a>
+
+      </div>
+    </header>
+
+    <div id="content-wrapper">
+      <div class="inner clearfix">
+        <section id="main-content">
+            {% if page.title != "openxface" %}
+                <h1><center>{{page.title}}</center></h1>
+                <hr />
+            {% endif %}
+            {{ content }}
+        </section>
+
+        <aside id="sidebar">
+        {% if page.title == "openxface" %}
+          <a target="_blank" href="https://github.com/polyvi/openxface-ios" class="button gh_button_blue">
+            iOS 源码
+          </a>
+          <a href="https://github.com/polyvi/openxface/zipball/master" class="button download_button">
+            下载 .zip
+          </a>
+          <a href="https://github.com/polyvi/openxface/tarball/master" class="button download_button">
+            下载 .tar.gz
+          </a>
+
+          <p class="repo-owner"><a href="https://github.com/polyvi/openxface"></a>由 <a href="https://github.com/polyvi">Polyvi</a> 维护</p>
+        {% else %}
+        <div id="aside-contents">
+        <h2>xFace指南</h2>
+        <a href="{{ site.baseurl }}/guide/ams/xface_ams.html">应用管理系统AMS</a><br />
+        <a href="{{ site.baseurl }}/guide/ams/xface_ams_native_apps.html">如何用AMS管理本地应用</a><br />
+        <a href="{{ site.baseurl }}/guide/ams/xface_app_zh.html">xFace Application简介</a><br />
+        <a href="{{ site.baseurl }}/guide/xface_configuration.html">xFace配置详解</a><br />
+        <a href="{{ site.baseurl }}/guide/xFace/startparams/startparams_zh.html">xFace通信</a><br />
+        <a href="{{ site.baseurl }}/guide/xFace/xFaceLib/xFaceLib_zh.html">集成xFaceLib</a><br />
+        <a href="{{ site.baseurl }}/guide/xFace/workspace/workspace_zh.html">xFace App Workspace介绍</a><br />
+        <a href="{{ site.baseurl }}/guide/player/player.html">xFace Player使用指南</a><br /><br />
+
+        <h2>xFace 应用编程指南</h2>
+
+        <a href="{{ site.baseurl }}/guide/AppProgramming/index.html">基本应用编程指南</a><br />
+        <a target="_blank" href="http://www.polyvi.net:8012/doc/xFaceSDK/">SDK参考手册</a><br />
+        <a href="{{ site.baseurl }}/guide/faq/faq.html">xFace FAQ手册</a><br /><br />
+
+        <a href="{{ site.baseurl }}/index_zh.html">返回首页</a>
+        <br />
+        <div/>
+        {% endif %}
+        <div id="copyright">
+          <p>Copyright 2012-2013, Polyvi Inc.</p>
+        </div>
+        </aside>
+      </div>
+    </div>
+
+    <div class="current-section">
+        <p class="name"></p>
+        <a href="#top">Scroll to top</a>
+    </div>
+
+    <script type="text/javascript">
+        var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+        document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+    </script>
+    <script type="text/javascript">
+        try {
+            var pageTracker = _gat._getTracker("UA-42031908-1");
+            pageTracker._trackPageview();
+        } catch(err) {}
+    </script>
+
+  </body>
+</html>
