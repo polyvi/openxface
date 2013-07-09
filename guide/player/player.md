@@ -1,6 +1,7 @@
 ---
-layout: player
+layout: default
 title: Player 使用手册
+tags: Player
 ---
 
 * Auto-generated toc:

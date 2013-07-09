@@ -15,6 +15,13 @@
 
     <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
     <script src="{{ site.baseurl }}/js/site.js" ></script>
+
+    {% if page.tags == "Player" %}
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/slideshow/iOS_player_itunes/engine/css/slideshow.css" media="screen" />
+    <script type="text/javascript" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/engine/js/mootools.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/engine/js/visualslideshow.js"></script>
+    {% endif %}
+
     <title>Openxface by polyvi</title>
   </head>
 
@@ -54,7 +61,7 @@
         {% else %}
             <div id="aside-contents">
                 <h2>xFace Guides</h2>
-                
+
                 <a href="{{ site.baseurl }}/guide/ams/xface_ams.html">Application Management System</a><br />
                 <a href="{{ site.baseurl }}/guide/ams/xface_ams_native_apps.html">AMS for Native Apps</a><br />
                 <a href="{{ site.baseurl }}/guide/ams/xface_app_en.html">What is xFace Application</a><br />
@@ -63,9 +70,9 @@
                 <a href="{{ site.baseurl }}/guide/xFace/xFaceLib/xFaceLib_zh.html">Embedding xFaceLib</a><br />
                 <a href="{{ site.baseurl }}/guide/xFace/workspace/workspace_zh.html">xFace App Workspace</a><br />
                 <a href="{{ site.baseurl }}/guide/player/player.html">xFace Player Usage</a><br /><br />
-                
+
                 <h2>Programming Guides</h2>
-                
+
                 <a href="{{ site.baseurl }}/guide/AppProgramming/index.html">Application Programming Guides</a><br />
                 <a target="_blank" href="http://www.polyvi.net:8012/doc/xFaceSDK/">SDK Manual</a><br />
                 <a href="{{ site.baseurl }}/guide/faq/faq.html">xFace FAQ</a><br /><br />

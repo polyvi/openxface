@@ -15,6 +15,13 @@
 
     <script src="http://code.jquery.com/jquery.min.js" type="text/javascript"></script>
     <script src="{{ site.baseurl }}/js/site.js" ></script>
+
+    {% if page.tags == "Player" %}
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/slideshow/iOS_player_itunes/engine/css/slideshow.css" media="screen" />
+    <script type="text/javascript" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/engine/js/mootools.js"></script>
+    <script type="text/javascript" src="{{ site.baseurl }}/slideshow/iOS_player_itunes/engine/js/visualslideshow.js"></script>
+    {% endif %}
+
     <title>Openxface中文站</title>
   </head>
 
@@ -58,7 +65,7 @@
         <a href="{{ site.baseurl }}/guide/xFace/xFaceLib/xFaceLib_zh.html">集成xFaceLib</a><br />
         <a href="{{ site.baseurl }}/guide/xFace/workspace/workspace_zh.html">xFace App Workspace介绍</a><br />
         <a href="{{ site.baseurl }}/guide/player/player.html">xFace Player使用指南</a><br /><br />
-    
+
         <h2>xFace 应用编程指南</h2>
 
         <a href="{{ site.baseurl }}/guide/AppProgramming/index.html">基本应用编程指南</a><br />
