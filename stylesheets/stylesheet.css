@@ -61,6 +61,15 @@ a:hover {
   color: #2268b2;
 }
 
+header h1 a{
+  color: #fff;
+}
+
+header h1 a:hover{
+  color: #fff;
+  text-decoration:underline;
+}
+
 header {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -231,7 +240,6 @@ form {
 }
 
 #main-content h1:before {
-  content: "/";
   color: #9ddcff;
   padding-right: 0.3em;
   margin-left: -0.9em;
