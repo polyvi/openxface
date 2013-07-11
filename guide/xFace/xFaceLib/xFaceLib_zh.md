@@ -1,6 +1,7 @@
 ---
-layout: default_zh
+layout: default
 title: 第三方使用xFace Library指南
+lang: zh
 ---
 
 * Auto-generated toc:

@@ -1,6 +1,7 @@
 ---
-layout: default_zh
+layout: default
 title: 第三方如何与xFace通信
+lang: zh
 ---
 
 * Auto-generated toc:

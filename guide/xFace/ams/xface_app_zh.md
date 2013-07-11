@@ -1,6 +1,7 @@
 ---
 layout: default
 title: xFace 应用
+lang: zh
 ---
 
 * Auto-generated toc

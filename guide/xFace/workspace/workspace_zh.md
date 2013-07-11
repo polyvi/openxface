@@ -1,6 +1,7 @@
 ---
-layout: default_zh
+layout: default
 title: xFace App Workspace 介绍
+lang: zh
 ---
 
 * Auto-generated toc:
