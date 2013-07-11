@@ -64,31 +64,7 @@
 
           <p class="repo-owner"><a href="https://github.com/polyvi/openxface"></a> is maintained by <a href="https://github.com/polyvi">polyvi</a>.</p>
         {% else %}
-            <div id="aside-contents">
-                <h2>xFace Guides</h2>
-
-                <a href="{{ site.baseurl }}/guide/xFace/ams/xface_ams.html">Application Management System</a><br />
-                <a href="{{ site.baseurl }}/guide/xFace/ams/xface_ams_native_apps.html">AMS for Native Apps</a><br />
-                <a href="{{ site.baseurl }}/guide/xFace/ams/xface_app_en.html">What is xFace Application</a><br />
-                <a href="{{ site.baseurl }}/guide/xFace/config/xface_configuration.html">Inside Configuration</a><br />
-                <a href="{{ site.baseurl }}/guide/xFace/startparams/startparams_zh.html">Communicating with xFace</a><br />
-                <a href="{{ site.baseurl }}/guide/xFace/xFaceLib/xFaceLib_zh.html">Embedding xFaceLib</a><br />
-                <a href="{{ site.baseurl }}/guide/xFace/workspace/workspace_zh.html">xFace App Workspace</a><br />
-                <a href="{{ site.baseurl }}/guide/player/player.html">xFace Player Usage</a><br /><br />
-
-                <h2>Programming Guides</h2>
-
-                <a href="{{ site.baseurl }}/guide/AppProgramming/index.html">Application Programming Guides</a><br />
-                <a href="{{ site.baseurl }}/guide/supported_features.html">Supported Features</a><br />
-                <a target="_blank" href="http://www.polyvi.net:8012/doc/xFaceSDK/">SDK Manual</a><br />
-                <a href="{{ site.baseurl }}/guide/faq/faq.html">xFace FAQ</a><br /><br />
-
-                <h2>Debugging Tools</h2>
-        
-                <a target="_blank" href="https://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariWebContent/DebuggingSafarioniPhoneContent/DebuggingSafarioniPhoneContent.html">Debugging Web Content on iOS</a><br /><br />
-        
-               <a href="{{ site.baseurl }}/index.html">Back To Home</a><br />
-            <div/>
+            {% include sidebar_contents.html %}
         {% endif %}
         <div id="copyright">
           <p>Copyright 2012-2013, Polyvi Inc.</p>

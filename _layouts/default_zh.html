@@ -60,31 +60,8 @@
 
           <p class="repo-owner"><a href="https://github.com/polyvi/openxface"></a>由 <a href="https://github.com/polyvi">Polyvi</a> 维护</p>
         {% else %}
-        <div id="aside-contents">
-        <h2>xFace指南</h2>
-        <a href="{{ site.baseurl }}/guide/xFace/ams/xface_ams.html">应用管理系统AMS</a><br />
-        <a href="{{ site.baseurl }}/guide/xFace/ams/xface_ams_native_apps.html">如何用AMS管理本地应用</a><br />
-        <a href="{{ site.baseurl }}/guide/xFace/ams/xface_app_zh.html">xFace Application简介</a><br />
-        <a href="{{ site.baseurl }}/guide/xFace/config/xface_configuration.html">xFace配置详解</a><br />
-        <a href="{{ site.baseurl }}/guide/xFace/startparams/startparams_zh.html">xFace通信</a><br />
-        <a href="{{ site.baseurl }}/guide/xFace/xFaceLib/xFaceLib_zh.html">集成xFaceLib</a><br />
-        <a href="{{ site.baseurl }}/guide/xFace/workspace/workspace_zh.html">xFace App Workspace介绍</a><br />
-        <a href="{{ site.baseurl }}/guide/player/player.html">xFace Player使用指南</a><br /><br />
-
-        <h2>xFace 应用编程指南</h2>
-
-        <a href="{{ site.baseurl }}/guide/AppProgramming/index.html">基本应用编程指南</a><br />
-        <a href="{{ site.baseurl }}/guide/supported_features.html">功能列表</a><br />
-        <a target="_blank" href="http://www.polyvi.net:8012/doc/xFaceSDK/">SDK参考手册</a><br />
-        <a href="{{ site.baseurl }}/guide/faq/faq.html">xFace FAQ手册</a><br /><br />
-
-        <h2>调试工具</h2>
-
-        <a target="_blank" href="https://developer.apple.com/library/safari/#documentation/AppleApplications/Reference/SafariWebContent/DebuggingSafarioniPhoneContent/DebuggingSafarioniPhoneContent.html">iOS上调试web应用</a><br /><br />
-        
-        <a href="{{ site.baseurl }}/index_zh.html">返回首页</a><br />
-        <div/>
-        {% endif %}
+            {% include sidebar_contents.html %}
+        {% endif %}        
         <div id="copyright">
           <p>Copyright 2012-2013, Polyvi Inc.</p>
         </div>
