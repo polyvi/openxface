@@ -27,7 +27,9 @@
     <param name="movie" value="{{ site.baseurl }}/videos/player/iOS_player_itunes.mp4" />
     <param name="allowFullScreen" value="true" />
     <param name="allowScriptAccess" value="sameDomain" />
-    <embed type="application/x-shockwave-mp4" width="720" height="414" allowfullscreen="true" allowscriptaccess="always" src="{{ site.baseurl }}/videos/player/iOS_player_itunes.mp4"></embed>
+    <param name="autoplay" value="false">
+    <param name="controller" value="true">
+    <embed type="application/x-shockwave-mp4" width="720" height="414" allowfullscreen="true" allowscriptaccess="always" autoplay="false" controller="true" src="{{ site.baseurl }}/videos/player/iOS_player_itunes.mp4" pluginspage="http://www.apple.com/quicktime/"></embed>
 </object>
 
 ### 越狱设备
@@ -55,7 +57,9 @@
     <param name="movie" value="{{ site.baseurl }}/videos/player/iOS_player_itools.mp4" />
     <param name="allowFullScreen" value="true" />
     <param name="allowScriptAccess" value="sameDomain" />
-    <embed type="application/x-shockwave-mp4" width="720" height="416" allowfullscreen="true" allowscriptaccess="always" src="{{ site.baseurl }}/videos/player/iOS_player_itools.mp4"></embed>
+    <param name="autoplay" value="false">
+    <param name="controller" value="true">
+    <embed type="application/x-shockwave-mp4" width="720" height="416" allowfullscreen="true" allowscriptaccess="always"  autoplay="false" controller="true" src="{{ site.baseurl }}/videos/player/iOS_player_itools.mp4" pluginspage="http://www.apple.com/quicktime/"></embed>
 </object>
 
 ### 补充说明
