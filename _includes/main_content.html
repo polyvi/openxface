@@ -1,0 +1,12 @@
+<div id="content-wrapper">
+  <div class="inner clearfix">
+    <section id="main-content">
+        {% if page.title != "openxface" %}
+            <h1><center>{{page.title}}</center></h1>
+            <hr />
+        {% endif %}
+        {{ content }}
+    </section>
+    {% include sidebar.html %}
+  </div>
+</div>

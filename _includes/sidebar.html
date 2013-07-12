@@ -1,0 +1,24 @@
+<aside id="sidebar">
+    {% if page.title == "openxface" %}
+      <a target="_blank" href="https://github.com/polyvi/openxface-ios" class="button gh_button_blue">
+        <small>Visit</small>
+        iOS source
+      </a>
+      <a href="https://github.com/polyvi/openxface/zipball/master" class="button download_button">
+        <small>Download</small>
+        .zip file
+      </a>
+      <a href="https://github.com/polyvi/openxface/tarball/master" class="button download_button">
+        <small>Download</small>
+        .tar.gz file
+      </a>
+
+      <p class="repo-owner"><a href="https://github.com/polyvi/openxface"></a> is maintained by <a href="https://github.com/polyvi">polyvi</a>.</p>
+    {% else %}
+        {% include sidebar_contents.html %}
+    {% endif %}
+
+    <div id="copyright">
+      <p>Copyright 2012-2013, Polyvi Inc.</p>
+    </div>
+</aside>
