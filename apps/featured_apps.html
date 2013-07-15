@@ -1,17 +1,20 @@
 ---
 layout: default
 title: Apps Created with xFace
+customCss: [/apps/assets/css/styles.css]
+customJs: [/apps/assets/js/jquery.quicksand.js, /apps/assets/js/script.js]
+customRemoteJs: ['http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js']
 ---
 
-<div class='img' id='img-1'>
-<a href='{{ site.baseurl }}/apps/featured_apps/nscb.html'><img src='{{ site.baseurl }}/slideshow/featured_apps/images/nscb.png' /></a>
-</div>
-<div class='img' id='img-2'>
-<a href='{{ site.baseurl }}/apps/featured_apps/gyccb.html'><img src='{{ site.baseurl }}/slideshow/featured_apps/images/gyccb.png' /></a>
-</div>
-<div class='img' id='img-3'>
-    <a href='{{ site.baseurl }}/apps/featured_apps/zijing.html'><img src='{{ site.baseurl }}/slideshow/featured_apps/images/zijing.png' /></a>
-</div>
-<div class='img' id='img-4'>
-    <a href='{{ site.baseurl }}/apps/featured_apps/qianetong.html'><img src='{{ site.baseurl }}/slideshow/featured_apps/images/qianetong.jpg' /></a>
-</div>
+<nav id="filter"></nav>
+
+<section id="container">
+    <ul id="stage">
+        
+        <li data-tags="iOS Apps,Android Apps"><a href='{{ site.baseurl }}/apps/featured_apps/gyccb.html'><img src="assets/img/gyccb.png" alt="Illustration" /></a></li>
+        <li data-tags="Android Apps"><a href='{{ site.baseurl }}/apps/featured_apps/qianetong.html'><img src="assets/img/qianetong.jpg" alt="Illustration" /></a></li>
+        <li data-tags="iOS Apps,Android Apps,WP 8 Apps"><a href='{{ site.baseurl }}/apps/featured_apps/nscb.html'><img src="assets/img/nscb.png" alt="Illustration" /></a></li>
+        <li data-tags="iOS Apps, Android Apps"><a href='{{ site.baseurl }}/apps/featured_apps/zijing.html'><img src="assets/img/zijing.png" alt="Illustration" /></a></li>
+    </ul>
+</section>
+  

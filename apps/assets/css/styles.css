@@ -1,0 +1,91 @@
+/*-------------------------
+	Simple reset
+--------------------------*/
+
+
+*{
+	margin-right:100px;
+	padding:0;
+}
+
+/*----------------------------
+	Green filter bar
+-----------------------------*/
+
+
+#filter {
+	background: #4169E1;
+	display: block;
+	height: 39px;
+	margin: 55px auto;
+	position: relative;
+	width: 700px;
+	text-align:center;
+
+    -moz-box-shadow:0 1px 1px #0000CD;
+	-webkit-box-shadow:0 1px 1px #0000CD;
+	box-shadow:0 1px 1px #0000CD;
+}
+
+
+#filter a{
+	color: #FFFFFF;
+	display: inline-block;
+	height: 39px;
+	line-height: 37px;
+	padding: 0 51px;
+	text-shadow:1px 1px 1px #315218;
+}
+
+#filter a:hover{
+    background: #0000CD;
+	text-decoration:none;
+}
+
+#filter a.active{
+	background: #FFA500;
+}
+
+
+/*----------------------------
+	Content area
+-----------------------------*/
+
+
+#container{
+	display:block;
+	overflow:hidden;
+	width: 830px;
+	margin:0 auto;
+}
+
+#container li{
+    background: #F4A460;
+	float: left;
+	height: 96px;
+	list-style: none outside none;
+	margin: 6px;
+	position: relative;
+	width: 125px;
+	
+	-moz-box-shadow: 0 0 5px #000;
+	-webkit-box-shadow: 0 0 5px #000;
+	box-shadow: 0 0 5px #000;
+}
+
+#container ul{
+	overflow:hidden;
+}
+
+#container ul.hidden{
+	display:none;
+}
+
+img{
+	-webkit-transition-duration: 0.5s;
+}
+
+img:hover{
+	-webkit-transform:scale(0.85);
+	-webkit-box-shadow:0px 0px 30px #ccc;
+}

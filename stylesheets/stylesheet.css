@@ -545,19 +545,3 @@ footer a:hover {
 .datagrid table tfoot  li { display: inline; }
 .datagrid table tfoot li a { text-decoration: none; display: inline-block;  padding: 2px 8px; margin: 1px;color: #FFFFFF;border: 1px solid #006699;-webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; }
 .datagrid table tfoot ul.active, .datagrid table tfoot ul a:hover { text-decoration: none;border-color: #00557F; color: #FFFFFF; background: none; background-color:#006699;}
-
-
-.img{
-    margin:10px;
-	float:left;
-    width:25%;
-	-webkit-transition-duration: 0.5s;
-	}
-.img img{
-	padding:4px;
-	border:3px solid #000;
-}
-.img:hover{
-	-webkit-transform:scale(0.8);
-	-webkit-box-shadow:0px 0px 30px #ccc;
-}
