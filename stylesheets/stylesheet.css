@@ -528,6 +528,10 @@ footer a:hover {
   filter:alpha(opacity=1);
 }
 
+#aside-contents a:hover {
+  text-decoration:underline;
+}
+
 /*Features table------------------------------------------------------------*/
 .datagrid table { border-collapse: collapse; text-align: center; width: 100%;}
 .datagrid {font: normal 28px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
