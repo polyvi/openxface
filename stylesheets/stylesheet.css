@@ -532,6 +532,19 @@ footer a:hover {
   text-decoration:underline;
 }
 
+li{
+  list-style: none;
+}
+
+ul li{
+  list-style:disc;
+}
+
+.expandable-header{
+  cursor: pointer; 
+  cursor: hand;
+}
+
 /*Features table------------------------------------------------------------*/
 .datagrid table { border-collapse: collapse; text-align: center; width: 100%;}
 .datagrid {font: normal 28px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
