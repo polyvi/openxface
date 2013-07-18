@@ -1,6 +1,7 @@
 ---
 layout: default
 title: xFace Configuration
+lang: zh
 ---
 
 * Auto-generated toc:

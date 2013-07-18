@@ -1,6 +1,7 @@
 ---
 layout: default
 title: Native Apps Management
+lang: zh
 ---
 
 * Auto-generated toc

@@ -1,6 +1,7 @@
 ---
 layout: default
 title: FAQ
+lang: zh
 ---
 
 * [iOS调用扩展接口无法立刻获得数据?](#qiosxfaceamslistinstalledapplicationssuccessfunction_failfunctionvoid)

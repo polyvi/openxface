@@ -1,6 +1,7 @@
 ---
 layout: default
 title: xFace3.x 应用开发指南
+lang: zh
 ---
 
 * Auto-generated toc:
