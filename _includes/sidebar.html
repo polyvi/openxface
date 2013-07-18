@@ -21,4 +21,12 @@
     <div id="copyright">
       <p>Copyright 2012-2013, Polyvi Inc.</p>
     </div>
+
+    <div>
+    {% if page.lang == "zh" %}
+        <a target="_blank" href="http://list.qq.com/cgi-bin/qf_invite?id=48f9d76d1a7d0d4c811c4b8c522780636b6f6226c2ba2ee6"><img alt="填写您的邮件地址，订阅我们的精彩内容：" border="0" src="{{site.baseurl}}/images/subscribe-button-zh.png"/></a>
+    {% else %}
+        <a target="_blank" href="http://list.qq.com/cgi-bin/qf_invite?id=48f9d76d1a7d0d4c811c4b8c522780636b6f6226c2ba2ee6"><img alt="Follow us on mailing list：" border="0" src="{{site.baseurl}}/images/subscribe-button-en.png"/></a>
+    {% endif %}
+    </div>
 </aside>
