@@ -85,4 +85,30 @@ SplashScreen画面淡入淡出的持续时间，单位秒
 是否使用player模式
 
 - `<preference name="UsePlayerMode" value="false" />`
-- 默认值为false，当且仅当以player模式启动时配置为true 
+- 默认值为false，当且仅当以player模式启动时配置为true
+
+###ANDROID的配置
+
+####FullScreen
+配置应用是否全屏显示，设置为true时，应用全屏显示
+
+- `<preference name="FullScreen" value="false" />`
+- 默认值是false
+
+####LoadUrlTimeout
+配置加载应用时等待xface.js是否加载完成的时间，单位ms
+
+- `<preference name="LoadUrlTimeout" value="5000" />`
+- 默认值是5000（5秒）
+
+####LogLevel
+配置LogCat打印的日志级别，有效值是"VERBOSE","DEBUG","INFO","WARN","ERROR"
+
+- `<preference name="LogLevel" value="DEBUG" />`
+- 默认值是*DEBUG*
+
+####WorkDir
+配置应用工作目录设定策略，有效值是"1","2","3"。1：仅手机内存;2：仅外部存储（FlashROM及SD/TF扩展卡）;3：外部存储优先
+
+- `<preference name="WorkDir" value="3" />`
+- 默认值是*3*
