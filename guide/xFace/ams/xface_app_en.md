@@ -69,4 +69,4 @@ The app.xml is configured with above properties and gets packed together with th
 The significant differences are,
 
 1. Perference *running_mode* is only applied to web app
-2. Some other preferences specific to native app are further documented at [Native Apps Management]({{ site.baseurl }}/guide/ams/xface_ams_native_apps.html#appxml)
+2. Some other preferences specific to native app are further documented at [Native Apps Management]({{ site.baseurl }}/guide/xFace/ams/xface_ams_native_apps.html#appxml)

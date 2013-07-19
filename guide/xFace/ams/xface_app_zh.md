@@ -65,4 +65,4 @@ Native app 是普通的移动原生应用，可由xFace AMS管理.
 native app.xml 与 web app.xml 的区别在于
 
 1. web app有运行模式running_mode, 取值为local或者online.
-1. native app 特有配置请参考[Native Apps Management]({{ site.baseurl }}/guide/ams/xface_ams_native_apps.html#appxml)
+1. native app 特有配置请参考[Native Apps Management]({{ site.baseurl }}/guide/xFace/ams/xface_ams_native_apps.html#appxml)
