@@ -13,8 +13,7 @@ lang: zh
 * [Android, viewport设置width后，未正确缩放?](#qandroidviewportwidth)
 * [geolocation在Android平台不能成功获得位置信息?](#qandroidwindownavigatorgeolocation)
 * [修改了xface.js中的代码，为什么没有生效?](#qxfacejs)
-* [引擎安装了多个应用，多个版本xface.js，如何共存?](#qxfacejs)
-
+* [xface.js的版本是如何管理的？](#q-xfacejs)
 
 ### Q：在iOS平台上调用扩展接口，如xFace.AMS.listInstalledApplications(success:Function, fail:Function):void，为何无法立即使用获取到的数据？
 
@@ -70,9 +69,12 @@ A：可能导致该问题的原因：
 - 由于内置xface.js，引擎会自动将内置的xface.js文件拷贝到应用的根目录，如果该目录下存在xface.js，该文件会被覆盖，可以通过修改引擎内置的xface.js解决
 - 页面引用的xface.js的路径不是已经修改的xface.js所在的路径
 
-### Q：引擎安装了多个应用，但每个应用都使用了不同版本的xface.js，如何保证所有应用都正常运行？（后续版本会解决该问题）
+### Q: xface.js的版本是如何管理的？
 
-A：以下两种解决方案
+A: 为了减轻应用开发、打包，xface.js版本管理的负担，xFace和xFace Player均内置了xface.js，应用依赖于所在引擎的xface.js。
 
-- 由于引擎内置的xface.js是最新版本，所以可以将所有应用都修改成使用最新版本的xface.js
-- 对于使用了老版本的xface.js，可以将xface.js放在一个特定的目录下，如js目录下，并在页面中引用该js，这样内置的xface.js就不会覆盖老版的xface.js
+请注意**内置xface.js的路径和app的index.html相同，请必须遵循此原则引用**
+
+只有一种例外，Online App，由于这种app部署在remote server，不能访问客户端js，所以它的发布包必须包含xface.js。具体请参考[Online App]({{site.baseurl}}/guide/xFace/ams/xface_online_app_zh.html)
+
+
