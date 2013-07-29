@@ -172,11 +172,14 @@ aside a.button {
   font-size: 21px;
 }
 
-aside a.gh_button_blue {
-  background: transparent url(../images/github-button-blue.png) 0 0 no-repeat;
+aside a.android_src {
+  background: transparent url(../images/visit_android_src.png) 0 0 no-repeat;
 }
-aside a.download_button {
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
+aside a.ios_src {
+  background: transparent url(../images/visit_ios_src.png) 0 0 no-repeat;
+}
+aside a.wp_src {
+  background: transparent url(../images/visit_wp_src.png) 0 0 no-repeat;
 }
 
 code, pre {
@@ -541,7 +544,7 @@ ul li{
 }
 
 .expandable-header{
-  cursor: pointer; 
+  cursor: pointer;
   cursor: hand;
 }
 
@@ -549,13 +552,13 @@ ul li{
 .datagrid table { border-collapse: collapse; text-align: center; width: 100%;}
 .datagrid {font: normal 28px/150% Arial, Helvetica, sans-serif; background: #fff; overflow: hidden; border: 1px solid #006699; -webkit-border-radius: 3px; -moz-border-radius: 3px; border-radius: 3px; }
 .datagrid table td, .datagrid table th { padding: 4px 10px; }
-.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#FFFFFF; font-size: 18px; font-weight: bold; border-left: 1px solid #0070A8; } 
+.datagrid table thead th {background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #006699), color-stop(1, #00557F) );background:-moz-linear-gradient( center top, #006699 5%, #00557F 100% );filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#006699', endColorstr='#00557F');background-color:#006699; color:#FFFFFF; font-size: 18px; font-weight: bold; border-left: 1px solid #0070A8; }
 .datagrid table thead th:first-child { border: none; }
 .datagrid table tbody td { color: #00557F; border-left: 1px solid #E1EEF4;font-size: 16px;font-weight: normal; }
 .datagrid table tbody .alt td { background: #E1EEF4; color: #00557F; }
 .datagrid table tbody td:first-child { border-left: none; }
 .datagrid table tbody tr:last-child td { border-bottom: none; }
-.datagrid table tfoot td div { border-top: 1px solid #006699;background: #E1EEF4;} 
+.datagrid table tfoot td div { border-top: 1px solid #006699;background: #E1EEF4;}
 .datagrid table tfoot td { padding: 0; font-size: 12px }
 .datagrid table tfoot td div{ padding: 2px; }
 .datagrid table tfoot td ul { margin: 0; padding:0; list-style: none; text-align: right; }
