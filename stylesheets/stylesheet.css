@@ -172,6 +172,10 @@ aside a.button {
   font-size: 21px;
 }
 
+aside a.sub_button {
+  background: transparent url(../images/subscription.png) 0 0 no-repeat;
+}
+
 aside a.android_src {
   background: transparent url(../images/visit_android_src.png) 0 0 no-repeat;
 }
