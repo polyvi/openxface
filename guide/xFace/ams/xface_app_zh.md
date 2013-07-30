@@ -29,9 +29,9 @@ Native app 是普通的移动原生应用，可由xFace AMS管理.
 
 1. **type** *必需*, 表明应用的类型
    * xapp (web app)
-   * napp (native app).
-2. **id** *必需*, 应用的唯一标识符.
-3. **entry** *必需*, 应用的入口地址, 不同类型的应用设置不一样
+   * napp (native app)
+2. **id** *必需*, 应用的唯一标识符
+3. **content** *必需*, 应用的入口地址, 不同类型的应用设置不一样
    * web app
       * local app 的取值: 相对app根目录路径, 例如:index.html
       * web app 的取值: 应用所在服务器的地址, 例如:http://app_server.com/yourapp/index.html
@@ -41,24 +41,32 @@ Native app 是普通的移动原生应用，可由xFace AMS管理.
 4. **icon** *必需*, 应用的图标地址
 5. **version** *必需*, 应用的版本号
 6. **name** *必需*, 应用的名称
+7. **mode** *必需*, 应用的部署策略
+	* local 应用及其资源部署在客户端
+	* online 应用及其资源部署在服务器
 
 #### 应用配置
 应用属性保存在app.xml文件中，是应用包的重要组成部分。
 
 #### app.xml示例
 
-    <config schema="1.0">
-        <app id="xapp">
-            <description>
-                <type>xapp</type>
-                <entry src="index.html" />
-                <icon  src="icon.png" />
-                <version>1.1</version>
-                <name>app</name>
-                <running_mode value="local"/>
-            </description>
-        </app>
-    </config>
+    <?xml version='1.0' encoding='UTF-8'?>
+	<widget id="xapp" version="2.0" xmlns="http://www.w3.org/ns/widgets">
+		<name short="myxFaceApp">myxFaceApp</name>
+		<icon src="icon.png" />
+		<content encoding="UTF-8" src="index.html" />
+		<preference name="type" readonly="true" value="xapp" />
+		<preference name="mode" readonly="true" value="local" />
+
+		<description>
+			A sample widget to demonstrate some of the possibilities.
+		</description>
+
+		<author email="foo-bar@polyvi.com/" href="http://polyvi.com/">polyvi</author>
+
+		<license> C  opyright 2012-2013, Polyvi Inc. </license>
+
+	</widget>
 {:lang="xml"}
 
 #### web app 和native app 的差异
