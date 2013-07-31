@@ -42,8 +42,8 @@ Native app 是普通的移动原生应用，可由xFace AMS管理.
 5. **version** *必需*, 应用的版本号
 6. **name** *必需*, 应用的名称
 7. **mode** *必需*, 应用的部署策略
-	* local 应用及其资源部署在客户端
-	* online 应用及其资源部署在服务器
+    * local 应用及其资源部署在客户端
+    * online 应用及其资源部署在服务器
 
 #### 应用配置
 应用属性保存在app.xml文件中，是应用包的重要组成部分。
@@ -51,22 +51,22 @@ Native app 是普通的移动原生应用，可由xFace AMS管理.
 #### app.xml示例
 
     <?xml version='1.0' encoding='UTF-8'?>
-	<widget id="xapp" version="2.0" xmlns="http://www.w3.org/ns/widgets">
-		<name short="myxFaceApp">myxFaceApp</name>
-		<icon src="icon.png" />
-		<content encoding="UTF-8" src="index.html" />
-		<preference name="type" readonly="true" value="xapp" />
-		<preference name="mode" readonly="true" value="local" />
+    <widget id="xapp" version="2.0" xmlns="http://www.w3.org/ns/widgets">
+        <name short="myxFaceApp">myxFaceApp</name>
+        <icon src="icon.png" />
+        <content encoding="UTF-8" src="index.html" />
+        <preference name="type" readonly="true" value="xapp" />
+        <preference name="mode" readonly="true" value="local" />
 
-		<description>
-			A sample widget to demonstrate some of the possibilities.
-		</description>
+        <description>
+            A sample widget to demonstrate some of the possibilities.
+        </description>
 
-		<author email="foo-bar@polyvi.com/" href="http://polyvi.com/">polyvi</author>
+        <author email="foo-bar@polyvi.com/" href="http://polyvi.com/">polyvi</author>
 
-		<license> C  opyright 2012-2013, Polyvi Inc. </license>
+        <license> Copyright 2012-2013, Polyvi Inc. </license>
 
-	</widget>
+    </widget>
 {:lang="xml"}
 
 #### web app 和native app 的差异
