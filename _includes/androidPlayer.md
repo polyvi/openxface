@@ -18,3 +18,13 @@
 
 ![](ImgAndroid/helloworldprint1.png)
 
+### 视频教程
+
+<object width="720" height="414">
+    <param name="movie" value="{{ site.baseurl }}/videos/player/Android_player_assistant.mp4" />
+    <param name="allowFullScreen" value="true" />
+    <param name="allowScriptAccess" value="sameDomain" />
+    <param name="autoplay" value="false">
+    <param name="controller" value="true">
+    <embed type="application/x-shockwave-mp4" width="720" height="414" allowfullscreen="true" allowscriptaccess="always" autoplay="false" controller="true" src="{{ site.baseurl }}/videos/player/Android_player_assistant.mp4" pluginspage="http://www.apple.com/quicktime/"></embed>
+</object>
