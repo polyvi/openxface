@@ -4,6 +4,7 @@ title: FAQ
 lang: zh
 ---
 
+
 * [iOS调用扩展接口无法立刻获得数据?](#qiosxfaceamslistinstalledapplicationssuccessfunction_failfunctionvoid)
 * [安装应用失败?](#qportal)
 * [使用xface.js报错或无法调用API?](#qscriptjsandroidjs)
@@ -14,8 +15,8 @@ lang: zh
 * [geolocation在Android平台不能成功获得位置信息?](#qandroidwindownavigatorgeolocation)
 * [修改了xface.js中的代码，为什么没有生效?](#qxfacejs)
 * [xface.js的版本是如何管理的？](#q-xfacejs)
-* [wp8 上使用xFace开发web应用，应用不能正常运行？](#q-wp8xfaceweb)
-* [wp8 上使用xFace开发web应用，应用不能正常适配？](#q-wp8xfacewebdisplay)
+* [wp8 上使用xFace开发web应用，应用不能正常运行？](#q-wp8-xfaceweb)
+* [wp8 上使用xFace开发web应用，应用不能正常适配？](#q-wp8-xfaceweb-1)
 
 ### Q：在iOS平台上调用扩展接口，如xFace.AMS.listInstalledApplications(success:Function, fail:Function):void，为何无法立即使用获取到的数据？
 
@@ -97,10 +98,12 @@ A: 这对wp8 的 IEMobile 可以加入以下代码解决适配
 
 - html页面中引入以下 javascript 代码
 
-    if (navigator.userAgent.match(/IEMobile\/10\.0/)) {		var msViewportStyle = document.createElement("style");		msViewportStyle.appendChild(		document.createTextNode(        "@-ms-viewport{width:auto!important}"        )        );        document.getElementsByTagName("head")[0].        appendChild(msViewportStyle);    }
+        if (navigator.userAgent.match(/IEMobile\/10\.0/)) {	        var msViewportStyle = document.createElement("style");	        msViewportStyle.appendChild(	            document.createTextNode(                "@-ms-viewport{width:auto!important}"            ));            document.getElementsByTagName("head")[0].            appendChild(msViewportStyle);        }
+    {:lang="xml"}
 
-- css 文件中加入 
-	@-ms-viewport{width:device-width; height:device-height}
+- css 文件中加入
+
+	    @-ms-viewport{width:device-width; height:device-height}
 
 
 
