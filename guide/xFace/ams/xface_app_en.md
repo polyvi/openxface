@@ -24,49 +24,60 @@ There are two subtypes,
 
 A native app is a normal mobile native app but could be encapsulated and be managed by xFace.
 
-## App Properties
+## App configuration and properties
 
-#### Properties
+#### App configuraion
+app.xml is an important part of the application, which is placed in the root directory of the application package. And app properties are configed in app.xml.
 
-An app typically has following properties,
+####Sample and Properties Intros
 
-1. **type**, indicates what type the app is,
-   * xapp, web app
-   * napp, native app
-2. **id**, unique id for the app
-3. **entry**, the main entry. Depends on what type it is, the value is defined by following,
-   * web app
-      + local app, the local url relative to app root, e.g., index.html.
-      + online app, the remote url for app, e.g., http://app_server.com/yourapp/index.html
-   * native app
-      + Android, the same package id of managed Android app
-      + iOS, the custom Scheme URL defined by managed iOS app
-4. **icon**, the icon url
-5. **version**, version number
-6. **name**, app name string
+    <?xml version='1.0' encoding='UTF-8'?>
 
+    <!-- id: unique id for the app, version: app version number -->
+    <widget id="xapp" version="2.0" xmlns="http://www.w3.org/ns/widgets">
 
-#### app.xml
-The app.xml is configured with above properties and gets packed together with the app.
+        <!-- short: abbreviated form of the app name,
+             value: app name string-->
+        <name short="MXA">myxFaceApp</name>
 
-####Sample
+        <!-- src: the icon url, relative app root directory -->
+        <icon src="icon.png" />
 
-    <config schema="1.0">
-        <app id="myapp">
-            <description>
-                <type>xapp</type>
-                <entry src="index.html" />
-                <icon  src="icon.png" />
-                <version>1.1</version>
-                <name>app</name>
-                <running_mode value="local"/>
-            </description>
-        </app>
-    </config>
+        <!-- src: the main entry. Depends on what type it is, the value is defined by following
+                  1.web app:
+                     local app, the local url relative to app root
+                     online app, the remote url for app(absolute address)
+                  2.native app:
+                     Android, the same package id of managed Android app
+                     iOS, the custom Scheme URL defined by managed iOS app -->
+        <content encoding="UTF-8" src="index.html" />
+
+        <!-- type: indicates what type the app is
+             value: xapp (indicates web app type)
+                    napp (indicates native app type) -->
+        <preference name="type" readonly="true" value="xapp" />
+
+        <!-- mode: app deployment strategy, it's valid only when property 'type' is 'xapp'
+             value: local app's code and resources is deployed on the client
+                    online app's code and resources is deployed on the remote server -->
+        <preference name="mode" readonly="true" value="local" />
+
+        <description>
+            A sample widget to demonstrate some of the possibilities.
+        </description>
+
+        <author email="foo-bar@polyvi.com/" href="http://polyvi.com/">polyvi</author>
+
+        <license> Copyright 2012-2013, Polyvi Inc. </license>
+
+    </widget>
 {:lang="xml"}
+
+#### app.xml configuration
+Manual configuration of the app.xml is not recommended. Please refer to the app.xml  generation tool—xappconfig for its configuration procedure and details.
 
 #### The differences between web and native app
 The significant differences are,
 
-1. Perference *running_mode* is only applied to web app
+1. Perference *mode* is only applied to web app
 2. Some other preferences specific to native app are further documented at [Native Apps Management]({{ site.baseurl }}/guide/xFace/ams/xface_ams_native_apps.html#appxml)
