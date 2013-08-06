@@ -105,10 +105,8 @@ A: 这对wp8 的 IEMobile 可以加入以下代码解决适配
 
 	    @-ms-viewport{width:device-width; height:device-height}
 
-
-
-
-
+### Q: 如何使用IE10开发模式调试WindowsPhone Web应用
+A: 请参考 <a target="_blank" href="http://blogs.windows.com/windows_phone/b/wpdev/archive/2012/10/17/getting-websites-ready-for-internet-explorer-10-on-windows-phone-8.aspx">Getting websites ready for Internet Explorer 10 on Windows Phone 8</a>
 
 
 
