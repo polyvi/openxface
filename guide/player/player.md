@@ -10,3 +10,4 @@ customJs: [/slideshow/iOS_player_itunes/engine/js/mootools.js, /slideshow/iOS_pl
 
 {% include androidPlayer.md %}
 {% include iOSPlayer.md %}
+{% include wp8Player.md %}
