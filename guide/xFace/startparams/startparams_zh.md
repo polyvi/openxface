@@ -8,21 +8,23 @@ lang: zh
 {:toc}
 
 ## xFace接收第三方程序启动参数用法说明
-* 由第三方传来的启动参数格式为：startpage=a/b.html;data=...
+由第三方传来的启动参数格式为：
 
-* "startpage="为启动页面的关键字， "a/b.html"为app启动页面路径，注意该路径是相对于app的根目录，"data="为传递给页面数据的关键字，...为具体的数据，和以前一样
+    startpage=a/b.html;data=...
 
-* 参数里面启动页面信息是可选的（startpage=a/b.html;可以不传给xface引擎），如果用户没有传入启动页面，则引擎默认从app.xml中读取启动页面（一般为源码根目录中的index.html）
+* **startpage=**
+   * 用于启动指定app页面，"a/b.html"为app启动页面路径，注意该路径是相对于app的根目录
+   * 该关键字可选, 如果用户没有传入启动页面，则引擎默认从app.xml中读取启动页面（一般为源码根目录中的index.html）
+   * **所有被第三方直接启动的页面必须要引用xface.js (xface.js 会内置到源码根目录)**
+* **data=**
+   * 用于为传递数据给应用
+   * 该关键字可选, 如果没有"data="关键字，比如startpage=a/b.html;...  ,引擎也会将... 解释为data部分
+   * 最终传递给页面的数据只会包括data数据部分，不带启动页面信息
 
-* "data="关键字可选，如果没有"data="关键字，比如startpage=a/b.html;...  ,引擎也会将... 解释为数据部分
-
-* 最终传递给页面的数据只会包括data数据部分，不带启动页面信息
-
-* **所有被第三方直接启动的页面必须要引用xface.js (xface.js 会内置到源码根目录)**
 
 ## 第三方启动xFace引擎的示例代码
 
-以第三方启动XFace,并传入启动参数为例（启动参数可选），给出如下示例代码：
+以第三方启动xFace,并传入启动参数为例（启动参数可选），给出如下示例代码：
 
 ###android
 
@@ -36,6 +38,7 @@ lang: zh
     PackageManager pm = getPackageManager();
     List<ResolveInfo> apps = pm.queryIntentActivities(resolveIntent, 0);
     ResolveInfo ri = apps.iterator().next();
+    
     if (ri != null) {
         String packageName = ri.activityInfo.packageName;
         String className = ri.activityInfo.name;
@@ -58,6 +61,7 @@ lang: zh
     NSURL *url = [NSURL URLWithString:@"xFace://?startpage=index.html;data=Admin;123]";
     [[UIApplication sharedApplication] canOpenURL:url]
     && [[UIApplication sharedApplication] openURL:url];
+{:lang="objective-c"}
 
 ## xFace web应用获取第三方参数的示例代码
 
@@ -65,16 +69,16 @@ lang: zh
     function onDeviceReady(startParams) {
         alert(startParams.data);
     }
-        
+{:lang="javascript"}    
         
 
 根据第二部分给出的示例代码，此处alert的结果如下：
     
 **Android**： 
 
-{\"token\":\"c5af5b63088b9e74353f758c0ed97d54\"#\"appPackage\":\"com.tydic.myphone\"#\"type\":\"null\"#\"favoriteObjId\":\"null\"}"
+    {\"token\":\"c5af5b63088b9e74353f758c0ed97d54\"#\"appPackage\":\"com.tydic.myphone\"#\"type\":\"null\"#\"favoriteObjId\":\"null\"}"
 
 **iOS**： 
 
-Admin;123
+    Admin;123
 
