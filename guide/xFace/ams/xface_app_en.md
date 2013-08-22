@@ -61,7 +61,11 @@ app.xml is an important part of the application, which is placed in the root dir
              value: local app's code and resources is deployed on the client
                     online app's code and resources is deployed on the remote server -->
         <preference name="mode" readonly="true" value="local" />
-
+        
+        <!-- engine: the minimum engine version requirement
+             value: the version number of the engine -->
+        <preference name="engine" readonly="true" value="3.1.0" />
+        
         <description>
             A sample widget to demonstrate some of the possibilities.
         </description>
