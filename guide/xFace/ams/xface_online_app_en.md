@@ -21,5 +21,30 @@ Online App is one kind of xFace web application, just specify the attribute
  
  in app.xml, then deploy its resource on remote server.
 
+### Multi Platform Deployment
+
+####xface.js Adaptation
+   
+When deploying the online app, xface.js should be adapted to each platform.
+Different platforms have different xface.js. In order to support multiple platforms, prepare a xface.js for each platform and the app load the corresponding xface.js according to the platform on which it runs.
+
+####Platform Identifier
+
+
+Platform identifier can be get by the two ways:
+
+   1 Platform identifier can be get from the user agent
+
+   2 xface engine appends platform identifier to the app entry's URL.
+
+
+Since user agent can't be get in some device, xface engine append parameter &platform=value to the app entry's URL, such as:
+
+```
+http://appentry.com/?platform=ios
+```
+
+ The value of platform can be ios, android or wp.
+
 ###Reference
 * [html5rocks offline](http://www.html5rocks.com/en/features/offline)

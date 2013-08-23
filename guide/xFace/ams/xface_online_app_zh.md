@@ -21,6 +21,30 @@ xFace定义了Online App，它属于web app的一种，只需要指定
     <running_mode value="online">
  
  即可，并把应用资源部署到服务器。
+
+
+### 多平台部署
+
+####xface.js适配
    
+在部署online app时候, 需要适配xface.js。
+不同的平台有不同的xface.js，为了支持多平台, 需要每个平台准备一份xface.js, 应用需要根据所运行的平台来加载相应的xface.js.
+
+####平台信息
+平台信息可以通过一下两种方式获取到：
+
+   1 平台信息可以通过user agent获取到。
+
+   2 xface引擎url通过参数的形式提供平台的信息
+   
+有些设备获取不到user agent，所以xface引擎通过url参数的形式提供平台的信息：
+引擎第一次加载online app，将platform 的信息以参数的形式加到url后面， 形如：
+
+```
+http://appentry.com/?platform=ios
+```
+
+其中 platform包括ios，android，wp。
+
 ###Reference
 * [html5rocks offline](http://www.html5rocks.com/en/features/offline)
