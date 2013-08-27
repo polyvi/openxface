@@ -185,6 +185,9 @@ aside a.ios_src {
 aside a.wp_src {
   background: transparent url(../images/visit_wp_src.png) 0 0 no-repeat;
 }
+aside a.download_button {
+  background: transparent url(../images/download-button.png) 0 0 no-repeat;
+}
 
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
