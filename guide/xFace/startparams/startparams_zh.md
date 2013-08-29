@@ -63,6 +63,14 @@ lang: zh
     && [[UIApplication sharedApplication] openURL:url];
 {:lang="objective-c"}
 
+###wp
+
+    //注意：启动参数必须符合URL规范：http://www.ietf.org/rfc/rfc1738.txt
+    //"xFace"为引擎的Custom URL Scheme,其值在WMAppManifest.xml中定义    
+    
+     var flag = await Windows.System.Launcher.LaunchUriAsync(new System.Uri("xFace://?startpage=index.html;data=Admin;123"));
+{:lang="c#"}
+
 ## xFace web应用获取第三方参数的示例代码
 
     document.addEventListener("deviceready", onDeviceReady, false);
@@ -82,3 +90,6 @@ lang: zh
 
     Admin;123
 
+**WP**： 
+
+    Admin;123
