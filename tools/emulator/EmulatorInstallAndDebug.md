@@ -4,10 +4,43 @@ title: Emulator安装与应用调试
 lang: zh
 ---
 
-Emulator安装
----
+* Auto-generated toc:
+{:toc}
 
-   * 下载并安装最新的Google Chrome浏览器（参考版本：23.0.1271.64 m）
+## 便携版（推荐）
+**以下内容仅适用于Windows**
+
+对于Windows用户，我们推荐使用便携版Chrome_Emulator:
+
+   * 无需手动安装Emulator插件
+   * 无需手动为Chrome添加启动参数
+
+### 使用方式
+  
+   * 下载[Chrome_Emulator.zip]({{ site.baseurl }}/download/Emulator.zip)并解压到本地（注意：解压路径请不要含有中文字符）
+   * 进入解压后Chrome_Emulator所在目录，启动Chrome_Emulator.exe，请参见下图：
+   
+   ![](img/chrome_emulator_start_page.png)
+   
+   * 在Chrome地址栏中输入应用地址,形如：
+   
+      * __http://xxx/app/index.html__
+      
+      * __file:///D:/xxx/app/index.html__
+
+   * 点击Emulator插件图标![](img/emulatorIcon.png)，选择“Enable”等待页面重新加载
+
+   * 运行Chrome“开发者工具”开始应用调试
+
+## 手动版
+
+**以下内容适用于Windows以及OS X**
+
+手动版要求用户手动安装Emulator并设置Chrome启动参数，具体操作如下：
+
+### Emulator安装
+
+   * 下载并安装最新的Google Chrome浏览器（参考版本：23.0.1271.64）
 
    * 运行Chrome，在地址栏中输入chrome://chrome/extensions/并打开页面（或通过“工具”->“扩展程序”打开）
 
@@ -19,10 +52,10 @@ Emulator安装
 
        ![](img/emulatorAccessFile.png)
 
-应用调试
----
-本地应用调试
----
+### 应用调试
+
+#### 本地应用调试
+
    * 确保开启“允许访问文件网址”权限（打开chrome://chrome/extensions/开启）
 
    * 设置Chrome启动参数：
@@ -32,41 +65,27 @@ Emulator安装
          1. 选择“属性”并编辑“目标”，在行尾添加参数：　--allow-file-access-from-files --disable-web-security
          1. 编辑后“目标”行形如：chrome.exe --allow-file-access-from-files --disable-web-security
 
-      * OSＸ：
+      * OS X：
          1. 运行Terminal.app
          1. 输入： /Applications/Google\ Chrome.app/Contents/MacOS/Google\Chrome --allow-file-access-from-files --disable-web-security
 
    * 重启Chrome并在Chrome中打开本地应用
 
-   * 点击Emulator插件图标  ，选择“Enable”等待页面重新加载完成
+   * 点击Emulator插件图标![](img/emulatorIcon.png)，选择“Enable”等待页面重新加载
 
    * 运行Chrome“开发者工具”开始应用调试
 
-远端应用调试
--
+#### 远端应用调试
 
-   * 运行 Chrome并在地址栏中输入应用地址,如“http://192.168.2.245/develop/apps/testsuite/index.html
-”
+   * 运行 Chrome并在地址栏中输入应用地址,如“http://xxx/app/index.html”
 
-   * 点击Emulator插件图标  ，选择“Enable”等待页面重新加载完成
+   * 点击Emulator插件图标![](img/emulatorIcon.png)，选择“Enable”等待页面重新加载
 
    * 运行Chrome“开发者工具”开始应用调试
 
-其他说明
--
+## 其他说明
 
-   * Chrome安装路径中不能含有中文字符，否则模拟器无法调试本地应用（建议使用绿色版Chrome）
-   
-   * 调试本地应用时，本地应用所在绝对路径不能含有中文字符，否则无法执行内置xface.js以及push文件到真机的操作
-
-   * __模拟器仅支持在调试本地应用时内置xface.js。当调试远端应用时，需要应用开发者手动将与模拟器配套发布的xface.js文件放置到应用根目录下。具体操作如下：__
-
-      * __如果您欲选择“Android”系统的设备进行调试，请将xface.android.js重命名为xface.js，并放置在应用根目录下__
-      * __如果您欲选择“iOS”系统的设备进行调试，请将xface.ios.js重名为xface.js，并放置在应用根目录下__
-
-   * 需保证为Chrome设置了启动参数：--allow-file-access-from-files, 否则本地应用将无法正常加载，控制台输出：“FileSystem error: SECURITY_ERR”
-
-   * 需保证为Chrome设置了启动参数：--disable-web-security ，否则某些场景下应用将无法正确获取网络数据，控制台输出：“XMLHttpRequest cannot load http://xxx. Origin http://xxx is not allowed by Access-Control-Allow-Origin.”
+   如果安装或使用过程中遇到问题，请参考[FAQ]({{ site.baseurl }}/tools/emulator/FAQ.html)或联系<a href="mailto:opensource@polyvi.com">opensource@polyvi.com</a>，我们会尽快回复您！
   
 
 

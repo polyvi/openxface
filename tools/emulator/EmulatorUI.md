@@ -4,6 +4,9 @@ title: Emulator UI 介绍
 lang: zh
 ---
 
+* Auto-generated toc:
+{:toc}
+
 ##Devices
 通过“Devices”面板可以选择iOS或Android设备。不同的设备类型，不仅宽高数据不同，其user agent等设备信息也会有所不同. 另外，通过此面板还可以指定设备朝向，从而查看应用在“横屏”或“竖屏”下的布局.
 
@@ -78,10 +81,12 @@ lang: zh
 开发人员通过“Developer Helper”面板可以完成如下操作：
 
    * 快速查看xFace SDK Online
+   * 进入xFace开源网站
    
    * 调试本地应用且连接Android设备时，push local workspace下的文件到真机，以更新xFacePlayer应用（目前不支持增量更新）
+   * 连接Android设备时，安装xFacePlayer到真机并将其启动
    
-   * 启动真机上的xFacePlayer,并通过logger查看log信息
+   * 连接Android设备时，通过logger查看log信息，并在xFacePlayer已安装的情况下，重新启动真机上的xFacePlayer
 
 ![DeveloperHelper](img/emulatorDeveloperHelper.png)
 
