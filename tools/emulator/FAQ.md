@@ -27,13 +27,13 @@ A：请参考以下六点：
 
    * 查看应用路径：本地应用所在绝对路径不能含有中文字符
    
-   * 请确保Android设备驱动安装成功
+   * 对于push操作，请确保Android设备驱动安装成功
    
-   * 请确保Android设备连接状态正常(adb get-state应输出‘device’)
+   * 对于push操作，请确保Android设备连接状态正常(adb get-state应输出‘device’)
     
-   * 请确保Android设备sdcard存在
+   * 对于push操作，请确保Android设备sdcard存在
    
-   * 如果看到提示信息"mkdir failed for -p, Read-only file system" "Permission denied", 请确保Android设备sdcard具有写权限
+   * 对于push操作，如果看到提示信息"mkdir failed for -p, Read-only file system" "Permission denied", 请确保Android设备sdcard具有写权限
    
 ### Q：调试应用时，控制台为何输出"Uncaught ReferenceError: xFace is not defined" ?
 
