@@ -21,11 +21,13 @@ A：请参考以下两点：
 
 ### Q：push操作以及xface.js内置操作为何失败 ？
 
-A：请参考以下五点：
+A：请参考以下六点：
 
    * push操作以及xface.js内置操作仅在调试本地应用时有效
 
    * 查看应用路径：本地应用所在绝对路径不能含有中文字符
+   
+   * 请确保Android设备驱动安装成功
    
    * 请确保Android设备连接状态正常(adb get-state应输出‘device’)
     
@@ -73,6 +75,9 @@ A：如果弹出如上提示框，表明应用根目录下放置的xface.js与�
       
       ![](img/emulator360Close.png)
 
+### 需要帮助
+
+   如果您的问题还没有解决，请联系<a href="mailto:opensource@polyvi.com">opensource@polyvi.com</a>，我们会尽快回复您！
 
 
 
