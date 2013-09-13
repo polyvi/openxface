@@ -45,7 +45,7 @@ A：应用根目录下不存在xface.js时，将出现此信息。解决方法�
 
    ![](img/emulatorJsFileMismatch.png)
   
-A：如果弹出如上提示框，表明应用根目录下放置的xface.js与当前所选设备系统不匹配。解决方法[同上](#quncaught-referenceerror-xface-is-not-defined)
+A：如果弹出如上提示框，表明应用根目录下放置的xface.js与当前所选设备系统不匹配。解决方法[同上](#quncaught-referenceerror-xface-is-not-defined-)
       
 ### Q：点击"install & launch",为何命令行提示"error:devcie not found" ？
 
@@ -54,7 +54,20 @@ A：如果弹出如上提示框，表明应用根目录下放置的xface.js与�
 ### Q：点击"launch player",为何命令行提示"Error Type 3" ？
 
    * A：请先执行"install & launch",将xFacePlayer.apk安装到真机后，再尝试执行"launch player"
+   
+### Q：使用便携版Chrome_Emulator, 如何阻止360弹出"检测到一个程序正在访问网络"的提示框 ？
 
+   ![](img/emulator360Prompt.png)
+
+   * A：使用Chrome_Emulator期间，关闭360"网络安全防护功能"，操作如下：
+   
+      * 1) 进入"木马防火墙已开启"界面
+      
+      ![](img/emulator360Enter.png)
+      
+      * 2) 关闭"系统防御"部分的"网络安全防护"
+      
+      ![](img/emulator360Close.png)
 
 
 
