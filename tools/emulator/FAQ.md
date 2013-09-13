@@ -21,13 +21,17 @@ A：请参考以下两点：
 
 ### Q：push操作以及xface.js内置操作为何失败 ？
 
-A：请参考以下三点：
+A：请参考以下五点：
 
    * push操作以及xface.js内置操作仅在调试本地应用时有效
 
    * 查看应用路径：本地应用所在绝对路径不能含有中文字符
    
-   * 请确保Android设备连接状态正常
+   * 请确保Android设备连接状态正常(adb get-state应输出‘device’)
+    
+   * 请确保Android设备sdcard存在
+   
+   * 如果看到提示信息"mkdir failed for -p, Read-only file system" "Permission denied", 请确保Android设备sdcard具有写权限
    
 ### Q：调试应用时，控制台为何输出"Uncaught ReferenceError: xFace is not defined" ?
 
