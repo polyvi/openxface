@@ -7,9 +7,11 @@ lang: zh
 * Auto-generated toc:
 {:toc}
 
-### 点击Emulator "Enable"选项后，Chrome为何没有重新加载页面
+### Q：点击Emulator "Enable"选项后，Chrome为何没有重新加载页面 ？
 
-   * 请查看Chrome路径：Chrome所在路径不能含有中文字符
+A：请参考以下两点：
+
+   * 查看Chrome路径：Chrome所在路径不能含有中文字符
 
    * 对于手动安装Emulator的用户，请查看Chrome控制台:
 
@@ -17,30 +19,41 @@ lang: zh
 
       * 如果控制台输出："XMLHttpRequest cannot load http://xxx. Origin http://xxx is not allowed by Access-Control-Allow-Origin.", 请为Chrome设置启动参数：__--disable-web-security__,否则某些场景下应用将无法正确获取网络数据
 
-### push操作以及xface.js内置操作为何失败
+### Q：push操作以及xface.js内置操作为何失败 ？
+
+A：请参考以下三点：
 
    * push操作以及xface.js内置操作仅在调试本地应用时有效
 
-   * 请查看应用路径：本地应用所在绝对路径不能含有中文字符
+   * 查看应用路径：本地应用所在绝对路径不能含有中文字符
    
    * 请确保Android设备连接状态正常
+   
+### Q：调试应用时，控制台为何输出"Uncaught ReferenceError: xFace is not defined" ?
 
+A：应用根目录下不存在xface.js时，将出现此信息。解决方法如下：
 
-### 调试远端应用时，Emulator为何无法模拟xFace扩展
-
-   * 调试远端应用时，需要应用开发者手动将与模拟器配套发布的xface.js文件放置到应用根目录下。具体操作如下：
+   * 本地应用： 请选择"Devices"面板的"Change Platform"，此操作会将与当前所选设备系统匹配的xface.js拷贝到应用根目录下
+      
+   * 远端应用：需要应用开发者手动将与模拟器配套发布的xface.js文件放置到应用根目录下。具体操作如下：
 
       * __如果您选择“Android”系统的设备进行调试，请将xface.android.js重命名为xface.js，并放置在应用根目录下__
 
       * __如果您选择“iOS”系统的设备进行调试，请将xface.ios.js重名为xface.js，并放置在应用根目录下__
       
-### 点击"install & launch",为何命令行提示"error:devcie not found"
+### Q：加载页面时，为何弹出"You'd better use xface.android.js（xface.ios.js） in order to match current device os!" ？
 
-   * 请确保Android设备连接状态正常
+   ![](img/emulatorJsFileMismatch.png)
+  
+A：如果弹出如上提示框，表明应用根目录下放置的xface.js与当前所选设备系统不匹配。解决方法[同上](#quncaught-referenceerror-xface-is-not-defined)
       
-### 点击"launch player",为何命令行提示"Error Type 3"
+### Q：点击"install & launch",为何命令行提示"error:devcie not found" ？
 
-   * 请先执行"install & launch",将xFacePlayer.apk安装到真机后，再尝试执行"launch player"
+   * A：请确保Android设备连接状态正常
+      
+### Q：点击"launch player",为何命令行提示"Error Type 3" ？
+
+   * A：请先执行"install & launch",将xFacePlayer.apk安装到真机后，再尝试执行"launch player"
 
 
 
