@@ -17,7 +17,7 @@ lang: zh
 
 ### 使用方式
   
-   * 下载[Chrome_Emulator.zip]({{ site.baseurl }}/download/Emulator.zip)并解压到本地（注意：解压路径请不要含有中文字符）
+   * 下载[PortableEmulator.zip]({{ site.baseurl }}/download/PortableEmulator.zip)并解压到本地（注意：解压路径请不要含有中文字符）
    * 进入解压后Chrome_Emulator所在目录，启动Chrome_Emulator.exe，请参见下图：
    
    ![](img/chrome_emulator_start_page.png)
@@ -44,7 +44,7 @@ lang: zh
 
    * 运行Chrome，在地址栏中输入chrome://chrome/extensions/并打开页面（或通过“工具”->“扩展程序”打开）
 
-   * 拖动Emulaltor.crx文件到“扩展程序”页面并按照提示安装
+   * 下载[ManualEmulator.zip]({{ site.baseurl }}/download/ManualEmulator.zip)并解压到本地,拖动Emulaltor.crx文件到“扩展程序”页面并按照提示安装
 
        ![](img/emulatorInstall.png)
 
