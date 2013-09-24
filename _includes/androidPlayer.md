@@ -29,3 +29,10 @@
     <embed type="application/x-shockwave-mp4" width="854" height="498" allowfullscreen="true" allowscriptaccess="always" autoplay="false" controller="true" src="{{ site.baseurl }}/videos/player/Android_player_assistant.mp4" pluginspage="http://www.apple.com/quicktime/"></embed>
 </object>
 
+### 在Player中使用HTML5的离线应用
++ 准备app.xml，参考"xFace 应用"中的[app.xml示例和属性说明](/guide/xFace/ams/xface_app_zh.html)
++ 修改app.xml中的属性，只需修改以下两个属性即可
+	- 将< preference name="mode" readonly="true" value="online" />标签中的value属性值改为"online"
+	- 将< content encoding="UTF-8" src="index.html" />标签中的src属性值改为应用所在服务器的地址的绝对路径。例如：< content encoding="UTF-8" src="http://www.polyvi.net:8012/offlineApp/index.html" />
++ 将准备好的app.xml拷贝到 "/mnt/sdcard/xFacePlayer/applications/app/"下，即可使用HTML5的离线应用功能
+
