@@ -1,10 +1,11 @@
 ## Windows Phone 8平台
 
 ###先决条件
-* Windows 8 64bits
-* Windows Phone 8 手机一部(已经开发者注册，请参考 <a target="_blank" href="<http://msdn.microsoft.com/library/windowsphone/develop/ff769508(v=vs.105).aspx">How to register your phone for development</a> )
+* on Windows8 PC
+* Windows Phone 8 手机一部(已经开发者注册，请参考[How to register your phone for development][wpregister])
+[wpregister]: http://msdn.microsoft.com/library/windowsphone/develop/ff769508(v=vs.105).aspx
 * SD卡一张
-* 安装 <a target="_blank" href="<http://download.microsoft.com/download/9/3/8/938A5074-461F-4E3D-89F4-5CE2F42C1E36/fulltril30/exe/WPexpress_full.exe">Windows Phone SDK</a>  
+* 安装 [Windows Phone SDK](http://dev.windowsphone.com/en-us/downloadsdk)</a>  
 
 ###操作步骤
 
@@ -25,6 +26,7 @@
 * 运行xFacePlayer  
 
     在手机上运行之前安装的xFacePlayer，从而启动应用。 
+
 ### 在Player中使用HTML5的离线应用
 + 准备app.xml，参考"xFace 应用"中的[app.xml示例和属性说明]({{ site.baseurl }}/guide/xFace/ams/xface_app_zh.html)
 + 修改app.xml中的属性，只需修改以下两个属性即可
