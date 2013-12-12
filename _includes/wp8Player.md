@@ -2,10 +2,9 @@
 
 ###先决条件
 * on Windows8 PC
-* Windows Phone 8 手机一部(已经开发者注册，请参考[How to register your phone for development][wpregister])
-[wpregister]: http://msdn.microsoft.com/library/windowsphone/develop/ff769508(v=vs.105).aspx
+* Windows Phone 8 手机一部(已经开发者注册，请参考[How to register your phone for development](http://msdn.microsoft.com/library/windowsphone/develop/ff769508.aspx))
 * SD卡一张
-* 安装 [Windows Phone SDK](http://dev.windowsphone.com/en-us/downloadsdk)</a>  
+* 安装 [Windows Phone SDK](http://dev.windowsphone.com/en-us/downloadsdk)
 
 ###操作步骤
 
