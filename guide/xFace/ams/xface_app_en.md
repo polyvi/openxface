@@ -65,7 +65,15 @@ app.xml is an important part of the application, which is placed in the root dir
         <!-- engine: the minimum engine version requirement
              value: the version number of the engine -->
         <preference name="engine" readonly="true" value="3.1.0" />
-        
+
+        <!-- plugins: config the plugins required for the app -->
+        <plugins>
+            <!-- id: unique id for the plugin
+                 version: plugin version number(the default value is the latest version, e.g. the second plugin tag) -->
+            <plugin id='org.apache.cordova.contacts' version='1.0.1'/>
+            <plugin id='com.polyvi.xface.extension.ams'/>
+        </plugins>
+
         <description>
             A sample widget to demonstrate some of the possibilities.
         </description>

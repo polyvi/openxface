@@ -58,10 +58,18 @@ app.xml文件是应用包的重要组成部分，放在应用的根目录下，�
              value: local 应用及其资源部署在客户端
                     online 应用及其资源部署在服务器 -->
         <preference name="mode" readonly="true" value="local" />
-        
+
         <!-- engine: 引擎最低版本的要求
              value: 引擎版本号 -->
         <preference name="engine" readonly="true" value="3.1.0" />
+
+        <!-- plugins: 用于配置应用所需的插件 -->
+        <plugins>
+            <!-- id: 插件的唯一标识符
+                 version: 插件的版本号(如果不写，如第二项plugin标签，则默认是最新版本) -->
+            <plugin id='org.apache.cordova.contacts' version='1.0.1'/>
+            <plugin id='com.polyvi.xface.extension.ams'/>
+        </plugins>
 
         <description>
             A sample widget to demonstrate some of the possibilities.
