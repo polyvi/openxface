@@ -5,18 +5,18 @@ lang: zh
 ---
 
 ##What is AMS
-xFace offers a running mode for multiple apps. Typically there is a supervisor app which's responsible for all other managed applications. Let's simply call this supervisor app as "Portal". Only Portal can be authorized AMS permission. 
+xFace提供了一套多应用的运行方式。实际上我们提供了一个超级APP用于管理其它的APP应用，我们称其为“Portal”。只有Portal应用具有AMS管理接口的授权。 
 
-Basically AMS offers a set of interfaces to manage apps as following,
+AMS提供了以下接口管理应用：
 
 ![ams](img/ams.png "ams outline")
 
 ##AMS with App Market
 
-With a back-end app market service, the Portal can ask for the market to get information, download, install or update apps with desire. The next figure outlines the entire circle, 
+配合一套后台的商店服务程序，Portal可以获取应用的信息，并在需要时下载、安装或升级应用。下图是整个流程的示意图： 
 
 ![ams with market](img/ams_with_market.png "market")
 
-The whole solution of AMS with one dedicated market provides an ability to build your own app ecosystem. Here's a screenshot of our Portal app,
+整套AMS的解决方案，配合定制的应用商店服务，可以搭建适合需要的生态系统。以下是我们的Portal示例应用截图：
 
 ![portal demo](img/portal_demo.png "portal demo")
